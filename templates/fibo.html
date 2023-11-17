@@ -1,0 +1,17 @@
+{% extends "main_layout.html" %}
+{% block content %}
+<div class="content-f" style="text-align: center;">
+    <p>Fibonacci Generator: Input Your Number</p>
+    <form method="post" action="{{ url_for('fibo') }}">
+        <label for="limit"></label>
+        <input type="number" name="limit" id="limit" required>
+        <button type="submit">Generate</button>
+    </form>
+    
+
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        display: flex;
+        justify-content: space-around;
+        background-color:#3498db;
+        padding: 10px;
+    }
+
+    .page a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .page a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .social-icons {
+        font-size: 36px; 
+        margin-top: 20px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons a {
+        margin: 0 20px; 
+        color: #333; 
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="page">
+        <a href="{{ url_for('blog') }}"><h4>Biodata</h4></a>
+        <a href="{{ url_for('riwayat') }}"><h4>Riwayat Pendidikan</h4></a>
+        <a href="{{ url_for('cv') }}"><h4>CV</h4></a>
+        <a href="{{ url_for('portofolio') }}"><h4>Portofolio</h4></a>
+        <a href="{{ url_for('contact') }}"><h4>Contact</h4></a>
+        <a href="{{ url_for('main') }}"><h4>Main</h4></a>
+    </div>
+
+    <div class="container">
+        <img src="{{ url_for('static', filename='myimage.png') }}" alt="My Image Description">
+        <h4 style="font-weight: bold;">Contact Me</h4>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/zoen-yokhanan-sianipar-1a19a8264/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/milgnag1" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/zoenys" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+</body>
+</html>

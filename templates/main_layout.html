@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPROWEEK10</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            display: flex;
+            justify-content: space-around;
+            background-color:#3498db;
+            padding: 10px;
+        }
+
+        .page a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .page a:hover {
+            text-decoration: underline;
+        }
+
+        .text{
+            text-align: center;
+            color: rgb(29, 29, 90);
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="{{ url_for('blog') }}"><h4>Blog</h4></a>
+        <a href="{{ url_for('fibo') }}"><h4>Fibonacci</h4></a>
+        <a href="{{ url_for('csvtojson') }}"><h4>CSV to JSON</h4></a>
+        <a href="{{ url_for('form') }}"><h4>FORM</h4></a>
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

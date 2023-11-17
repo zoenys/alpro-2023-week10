@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 1px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 2px;
+            box-sizing: border-box;
+            display: block;
+            margin: 0;
+        }
+
+        form button[type="submit"] {
+            background-color: #3498db; 
+            color: white;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            position: center;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="background-color: #3498db; color: white; padding: 10px;">Form Submission</h4>
+    <form action="{{ url_for('form') }}" method="post">
+        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        <br>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+        <br>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

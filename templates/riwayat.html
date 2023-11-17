@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            display: flex;
+            justify-content: space-around;
+            background-color:#3498db;
+            padding: 10px;
+        }
+
+        .page a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .page a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+</style>
+<body>
+    <div class="page">
+        <a href="{{ url_for('blog') }}"><h4>Biodata</h4></a>
+        <a href="{{ url_for('riwayat') }}"><h4>Riwayat Pendidikan</h4></a>
+        <a href="{{ url_for('cv') }}"><h4>CV</h4></a>
+        <a href="{{ url_for('portofolio') }}"><h4>Portofolio</h4></a>
+        <a href="{{ url_for('contact') }}"><h4>Contact</h4></a>
+        <a href="{{ url_for('main') }}"><h4>Main</h4></a>
+    </div>
+
+    <div class = "container">
+        <p style="font-weight: bold;">Riwayat Pendidikan</p>
+        <p><strong>(2009-2010) TK HKBP TARUTUNG, SUMATERA UTARA</strong></p>
+        <p><strong>(2010-2011) SDK HKBP TARUTUNG, SUMATERA UTARA</strong></p>
+        <p><strong>(2011-2013) SDK METHODIST PEMATANG SIANTAR, SUMATERA UTARA</strong></p>
+        <p><strong>(2013-2016) SDK HKBP TARUTUNG, SUMATERA UTARA</strong></p>
+        <p><strong>(2016-2019) SMPK IMMANUEL, BATAM, KEPULAUAN RIAU</strong></p>
+        <p><strong>(2019-2022) SMAN 1 BATAM, KEPULUAN RIAU</strong></p>
+        <p><strong>(2022-) UNIVERSITAS AIRLANGGA, SURABAYA, JAWA TIMUR</strong></p>
+    </div>
+
+</body>
+</html>
+
+
+<!-- {% extends "blog.html" %}
+{% block content %}
+    <div class="riwayat">
+        <p style="font-weight: bold;">Riwayat Pendidikan</p>
+        <p><strong>(2009-2010) TK HKBP TARUTUNG, SUMATERA UTARA</strong></p>
+        <p><strong>(2010-2011) SDK HKBP TARUTUNG, SUMATERA UTARA</strong></p>
+        <p><strong>(2011-2013) SDK METHODIST PEMATANG SIANTAR, SUMATERA UTARA</strong></p>
+        <p><strong>(2013-2016) SDK HKBP TARUTUNG, SUMATERA UTARA</strong></p>
+        <p><strong>(2016-2019) SMPK IMMANUEL, BATAM, KEPULAUAN RIAU</strong></p>
+        <p><strong>(2019-2022) SMAN 1 BATAM, KEPULUAN RIAU</strong></p>
+        <p><strong>(2022-) UNIVERSITAS AIRLANGGA, SURABAYA, JAWA TIMUR</strong></p>
+    </div>
+{% endblock %} -->

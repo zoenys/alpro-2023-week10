@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            display: flex;
+            justify-content: space-around;
+            background-color:#3498db;
+            padding: 10px;
+        }
+
+        .page a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .page a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #content .riwayat{
+        text-align: center;
+        max-width: 600px; 
+        margin: 0 auto; 
+        }
+</style>
+<body>
+    <div class="page">
+        <a href="{{ url_for('blog') }}"><h4>Biodata</h4></a>
+        <a href="{{ url_for('riwayat') }}"><h4>Riwayat Pendidikan</h4></a>
+        <a href="{{ url_for('cv') }}"><h4>CV</h4></a>
+        <a href="{{ url_for('portofolio') }}"><h4>Portofolio</h4></a>
+        <a href="{{ url_for('contact') }}"><h4>Contact</h4></a>
+        <a href="{{ url_for('main') }}"><h4>Main</h4></a>
+    </div>
+
+    <div class = "container">
+        <img src="{{ url_for('static', filename='myimage.png') }}" alt="My Image Description">
+
+        <p><strong>Nama Lengkap</strong>: Zoen Yokhanan Sianipar</p>
+        <p><strong>Nama Panggilan</strong>: Zoen / Zun</p>
+        <p><strong>NIM</strong>: 164221038</p>
+        <p><strong>Kewarganegaraan</strong>: Indonesia</p>
+        <p><strong>Jenis Kelamin</strong>: Laki-laki</p>
+        <p><strong>Golongan Darah</strong>: O</p>
+        <p><strong>Tempat, tanggal lahir</strong>: Medan, 29 September 2004</p>
+        <p><strong>Alamat</strong>: Jalan Kamboja No.1, Batam, Kepulauan Riau</p>
+        <p><strong>Status</strong>: Mahasiswa</p>
+        <p><strong>Motto Hidup</strong>: Sala Mandasor, Sega Luhutan</p>
+    </div>
+
+</body>
+</html>

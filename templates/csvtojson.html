@@ -1,0 +1,9 @@
+{% extends "main_layout.html" %}
+{% block content %}
+    <div class="content-ctj" style="text-align:center;">
+        <p style="font-weight: bold;">CSV-JSON Result</p>
+        {% if jsondata %}
+            <pre>{{ jsondata }}</pre>
+        {% endif %}
+    </div>
+{% endblock %}

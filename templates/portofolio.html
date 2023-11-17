@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page {
+            display: flex;
+            justify-content: space-around;
+            background-color:#3498db;
+            padding: 10px;
+        }
+
+        .page a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .page a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+</style>
+<body>
+    <div class="page">
+        <a href="{{ url_for('blog') }}"><h4>Biodata</h4></a>
+        <a href="{{ url_for('riwayat') }}"><h4>Riwayat Pendidikan</h4></a>
+        <a href="{{ url_for('cv') }}"><h4>CV</h4></a>
+        <a href="{{ url_for('portofolio') }}"><h4>Portofolio</h4></a>
+        <a href="{{ url_for('contact') }}"><h4>Contact</h4></a>
+        <a href="{{ url_for('main') }}"><h4>Main</h4></a>
+    </div>
+
+    <div class = "container">
+        <h4 style="font-weight: bold;">Portofolio</h4>
+        <p><strong>Analyzing Customer Churn: *Predicting Who Stays and Who Leavest*</strong></p>
+        <p><strong>Rent Price Analysis: A Regression Approach*</strong></p>
+        <p><strong>Regression on Average Score Based on Some Independent Variables*</strong></p>
+    </div>
+
+</body>
+</html>
+
+
